@@ -1,0 +1,115 @@
+.skill-bundle-section {
+    height: 100vh;
+}
+
+.skill-bundle-text {
+    /* background-color: coral; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.skill-bundle-title {
+    font-size: 20px;
+}
+
+.skill-bundle-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.skill-bundle-card {
+    background-color: aqua;
+    display: flex;
+    padding: 25px 25px 25px 25px;
+    border-radius: 10px;
+    margin: 0 40px 0 40px;
+}
+
+.represent-imges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    background-color: blue;
+}
+
+.name-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+    background-color: blue;
+    margin-right: 10px;
+}
+
+
+
+.graphic-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    flex: 1;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.img-card-img-coil,
+.img-card-img-wheel,
+.img-card-img-casting,
+.img-card-img-rhino,
+.img-card-img-ps,
+.img-card-img-il,
+.img-card-img-js,
+.img-card-img-py,
+.img-card-img-db,
+.img-card-img-react,
+.img-card-img-church {
+    height: 15px;
+    background-color: red;
+}
+
+.img-card-img-coil {
+    width: 75%;
+}
+.img-card-img-wheel{
+    width: 40%;
+}
+.img-card-img-casting{
+    width: 50%;
+}
+.img-card-img-rhino {
+    width: 45%;
+}
+.img-card-img-ps {
+    width: 25%;
+}
+.img-card-img-il {
+    width: 20%;
+}
+.img-card-img-js {
+    width: 55%;
+}
+.img-card-img-py {
+    width: 15%;
+}
+.img-card-img-db {
+    width: 30%;
+}
+.img-card-img-react {
+    width: 5%;
+}
+.img-card-img-church {
+    width: 95%;
+}
+
+.description-image {
+    width: 300px;
+    background-color: brown;
+}

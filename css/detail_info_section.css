@@ -1,0 +1,72 @@
+.content-section {
+    position: relative;
+}
+
+.detail-info-section {
+    position: absolute;
+    top: -200px;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 20em;
+    height: 8em;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.detail-info-title {
+    width: 150px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 5px;
+}
+
+.detail-info {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    /* background-color: red; */
+    width: 150px;
+    position: relative;
+}
+
+#detail-info-x-emoji {
+    font-size: 11px;
+    position: absolute;
+    top: -29px;
+    right: -164px;
+}
+
+.detail-class {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    width: 60px;
+    font-size: 10px;
+    margin-left: 40px;
+    font-weight: 100;
+    /* background-color: green; */
+    
+}
+
+.detail-value {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    width: 100%;
+    font-size: 10px;
+}
+
+.detail-info-img {
+    border-radius: 99999px;
+    width: 7.5em;
+    height: 7.5em;
+    background-color: white;
+    margin-right: 30px;
+    background-image: url("../img/이인셀카1.jpg");
+    background-size : cover;
+}

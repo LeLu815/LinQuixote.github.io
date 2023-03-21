@@ -1,0 +1,306 @@
+.preference-respect-section {
+    height: 100vh;
+}
+
+.preference-header {
+    margin-top: 10px;
+    /* display: flex; */
+    padding: 0 40px 0 40px;
+}
+
+.preference-header-text {
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.preference-header-btns {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.preference-header-like {
+    width: 85px;
+    text-align: center;
+    padding-right: 5px;
+    padding: 5px 10px 5px 5px;
+    /* border-radius: 2px; */
+    font-size: 12px;
+    border: 1px solid white;
+}
+
+.preference-header-like:hover {
+    transform: scale(1) translate(1px,-2px);
+    -webkit-transform: scale(1.1) translate(1px,-2px);
+    -moz-transform: scale(1.1) translate(1px,-2px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.preference-header-like:active + .like-card-bundle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    opacity: 1;
+}
+
+.preference-header-like:active + .dislike-card-bundle {
+    display: none;
+    opacity: 0;
+}
+
+
+
+/* .like-card-bundle:active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    opacity: 1; 
+} */
+
+.preference-header-dislike {
+    width: 90px;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.preference-header-dislike:hover {
+    transform: scale(1) translate(1px,-2px);
+    -webkit-transform: scale(1.1) translate(1px,-2px);
+    -moz-transform: scale(1.1) translate(1px,-2px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.preference-header-dislike:active + .dislike-card-bundle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    opacity: 1;
+}
+
+.preference-header-dislike:active + .like-card-bundle {
+    display: none;
+    opacity: 0;
+}
+
+
+
+
+.like-dislike-section {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 50px 0 50px;
+}
+
+.like-card-bundle {
+    display: none;
+    opacity: 0;
+}
+
+.like-card-bundle:active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    opacity: 1;
+
+}
+
+.like-card {
+    width: 200px;
+    height: 280px;
+    background-color: black;
+    border: 1px solid rgb(129, 129, 129);
+    
+}
+
+.like-card:hover {
+    transform: scale(1) translate(1px,-4px);
+    -webkit-transform: scale(1.1) translate(1px,-4px);
+    -moz-transform: scale(1.1) translate(1px,-4px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.like-card-header {
+    display: flex;
+    justify-content:left;
+    gap: 10px;
+    margin: 20px 0 0 10px;
+    font-size: 10px;
+}
+
+.like-card-class {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(145, 145, 145);
+}
+
+.like-card-value {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.like-card-img-cat {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background-image: url("../img/like-dislike/cat.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.like-card-img-dog {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background-image: url("../img/like-dislike/dog.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.like-card-img-food {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background-image: url("../img/like-dislike/nouveau5.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.like-card-img-church {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background-image: url("../img/like-dislike/church.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.dislike-card-bundle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.dislike-card {
+    width: 200px;
+    height: 280px;
+    background-color: black;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+.dislike-card:hover {
+    transform: scale(1) translate(1px,-4px);
+    -webkit-transform: scale(1.1) translate(1px,-4px);
+    -moz-transform: scale(1.1) translate(1px,-4px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dislike-card-header {
+    display: flex;
+    justify-content:left;
+    gap: 10px;
+    margin: 20px 0 0 10px;
+    font-size: 10px;
+}
+
+.dislike-card-class {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: rgb(145, 145, 145);
+}
+
+.dislike-card-value {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.dislike-card-img-walk {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 25px;
+    background-image: url("../img/like-dislike/walk.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dislike-card-img-ceramics {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 16px;
+    background-image: url("../img/like-dislike/ceramics.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dislike-card-img-hot {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 25px;
+    background-image: url("../img/like-dislike/hot.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dislike-card-img-dust {
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    margin-top: 25likeCardBundlepx;
+    background-image: url("../img/like-dislike/dust.jpg");
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
