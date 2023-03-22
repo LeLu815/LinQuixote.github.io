@@ -129,6 +129,15 @@ body {
     height: 100vh;
 }
 
+.cat-dog-section {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    top: 100px;
+    left: 0px;
+    /* z-index: -1; */
+}
+
 .introduce-text {
     margin: 20px 0 0 0;
 }
@@ -216,6 +225,7 @@ body {
     right: 230px;
     opacity: 0.5;
     font-size: 50px;
+    display: none;
 }
 #img_singing_play:hover {
     transform:scale(1.4);
@@ -252,8 +262,7 @@ body {
 .pop-up-div-box {
     position: absolute;
     width: 9em;
-    height: 10em;
-    top: 16.5em;
+
     right: 4em;
 }
 

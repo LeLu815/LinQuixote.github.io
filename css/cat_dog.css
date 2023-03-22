@@ -1,0 +1,227 @@
+.img-card-section_module {
+    margin-top: 35px;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+}
+
+.img-card-section_module:hover + .recent-work-section-show-progress_module {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    background-color: none;
+    top: 460px;
+    left: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.3);
+    z-index: 9999;
+}
+
+.click-fade-out {
+    opacity: 1;
+    z-index: 999;
+}
+
+.img-card-go-pre_module {
+    background-color: black;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-card-go-pre_module:hover {
+    box-shadow: -3px 3px 11px 3px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: -3px 3px 11px 3px rgba(111, 111, 111, 0.75);
+    -moz-box-shadow: -3px 3px 11px 3px rgba(109, 109, 109, 0.75);
+    /* transform: scaleX(-1); */
+}
+
+.img-card-go-pre_module:hover > .fa-solid {
+    transform: scale(1.4); /* (150% zoom, 사이즈가 너무 클 경우 viewport 밖으로 나가게 됨 주의! */
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-card-imgs_module {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    position: relative;
+}
+
+.img-card-imgs_module::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url('../img/recent_work/recent_work_1.jpg'); */
+    background-image: var(--background-image);
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+    background-position: center;
+    /* backdrop-filter: blur(10px); */
+    filter: blur(5px);
+    /* z-index: 0; */
+}
+
+.img-card-imgs_module div.active {
+    opacity: 1;
+}
+
+.img-card-img-1_module,
+.img-card-img-2_module,
+.img-card-img-3_module,
+.img-card-img-4_module,
+.img-card-img-5_module,
+.img-card-img-6_module,
+.img-card-img-7_module,
+.img-card-img-8_module,
+.img-card-img-9_module,
+.img-card-img-10_module,
+.img-card-img-11_module {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.img-card-img-1_module {
+    background-image: url("../img/about_dog_cat/cat_dog_1.jpg");
+    /* display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-2_module {
+    background-image: url("../img/about_dog_cat/cat_dog_2.jpg");
+    /* display: block; */
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-3_module {
+    background-image: url("../img/about_dog_cat/cat_dog_3.jpg");
+    /* background-size: contain;
+    recentWorkSectionBtn-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-4_module {
+    background-image: url("../img/about_dog_cat/cat_dog_4.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-5_module {
+    background-image: url("../img/about_dog_cat/cat_dog_5.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-6_module {
+    background-image: url("../img/about_dog_cat/cat_dog_6.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-7_module {
+    background-image: url("../img/about_dog_cat/cat_dog_7.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-8_module {
+    background-image: url("../img/about_dog_cat/cat_dog_8.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-9_module {
+    background-image: url("../img/about_dog_cat/cat_dog_9.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.img-card-img-10_module {
+    background-image: url("../img/about_dog_cat/cat_dog_10.jpg");
+    /* background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.img-card-go-next_module{
+    /* background-color: brown; */
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.img-card-go-next_module:hover {
+    box-shadow: 3px 3px 11px 3px rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: 3px 3px 11px 3px rgba(111, 111, 111, 0.75);
+    -moz-box-shadow: 3px 3px 11px 3px rgba(109, 109, 109, 0.75);
+}
+
+.img-card-go-next_module:hover > .fa-solid {
+    transform: scale(1.4); /* (150% zoom, 사이즈가 너무 클 경우 viewport 밖으로 나가게 됨 주의! */
+    transition: transform 0.3s ease-in-out;
+}
+
+.recent-work-section-show-progress_module {
+    display: none;
+}
+
+#recent_card_img_btn_1_module,
+#recent_card_img_btn_2_module,
+#recent_card_img_btn_3_module,
+#recent_card_img_btn_4_module,
+#recent_card_img_btn_5_module,
+#recent_card_img_btn_6_module,
+#recent_card_img_btn_7_module,
+#recent_card_img_btn_8_module,
+#recent_card_img_btn_9_module,
+#recent_card_img_btn_10_module {
+    zoom: 0.8;
+}
+
+
+.img-card-section-x-btn {
+    position: absolute;
+    right: -40px;
+    top: -40px;
+    font-size: 20px;
+    /* z-index: -1; */
+}
+
+.img-card-section-x-btn:hover {
+    transform: scale(1.2); /* (150% zoom, 사이즈가 너무 클 경우 viewport 밖으로 나가게 됨 주의! */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(212, 0, 255),
+    0 0 82px rgb(212, 0, 255), 0 0 92px rgb(212, 0, 255), 0 0 102px rgb(212, 0, 255), 0 0 151px rgb(212, 0, 255);
+}
+
+
+
+
