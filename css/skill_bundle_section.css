@@ -24,29 +24,58 @@
 }
 
 .skill-bundle-card {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     padding: 25px 25px 25px 25px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 0 40px 0 40px;
 }
 
 .represent-imges {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     font-size: 15px;
     margin-right: 10px;
-    background-color: blue;
+    /* background-color: blue; */
+}
+
+.skill-bundle-header-text {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    height: 15px;
+}
+.skill-bundle-header-text:hover {
+    transform: scale(1) translate(1px,-4px);
+    -webkit-transform: scale(1.1) translate(1px,-4px);
+    -moz-transform: scale(1.1) translate(1px,-4px);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+#coiling_i,
+#wheel_i,
+#casting_i,
+#rhino_i,
+#photoshop_i,
+#illustator_i,
+#javascript_i,
+#python_i,
+#mongo_i,
+#react_i,
+#church_i {
+    width: 18px;
 }
 
 .name-section {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     font-size: 15px;
-    background-color: blue;
     margin-right: 10px;
+    font-weight: 100;
+    color: rgb(179, 179, 179);
 }
 
 
@@ -54,10 +83,10 @@
 .graphic-bar {
     display: flex;
     flex-direction: column;
-    background-color: blueviolet;
     flex: 1;
     margin-right: 10px;
-    gap: 10px;
+    gap: 12px;
+    background-color: black;
 }
 
 .img-card-img-coil,
@@ -75,41 +104,176 @@
     background-color: red;
 }
 
-.img-card-img-coil {
-    width: 75%;
+meter {
+    width: 450px;
+    height: 15px;
+    margin-left: 20px;
 }
-.img-card-img-wheel{
-    width: 40%;
+
+meter::-webkit-meter-bar {
+    max-width: 450px;
+    height: 15px;
+    border-radius: 0px;
+    background-color: black;
+    border: none;
 }
-.img-card-img-casting{
-    width: 50%;
+
+/* meter 최적값에서 많이 부족한 색상 설정 */
+meter::-webkit-meter-even-less-good-value {
+    background: #6e154c;
+    background: linear-gradient(1deg,#6e154c 0%, #c64b6e 90%);
+    background: -webkit-linear-gradient(1deg,#6e154c 0%, #c64b6e 90%);
+    background: -moz-linear-gradient(1deg,#6e154c 0%, #c64b6e 90%);
 }
-.img-card-img-rhino {
-    width: 45%;
+
+/* meter 최적값에 근접한 색상 설정 */
+meter::-webkit-meter-suboptimum-value {
+    background: #6e154c;
+    background: linear-gradient(1deg,#6e154c 0%, #a23350 20%, #cd5b4f 60%, #eb8c4d 90%);
+    background: -webkit-linear-gradient(1deg,#6e154c 0%, #a23350 20%, #cd5b4f 60%, #eb8c4d 90%);
+    background: -moz-linear-gradient(1deg,#6e154c 0%, #a23350 20%, #cd5b4f 60%, #eb8c4d 90%);
 }
-.img-card-img-ps {
-    width: 25%;
-}
-.img-card-img-il {
-    width: 20%;
-}
-.img-card-img-js {
-    width: 55%;
-}
-.img-card-img-py {
-    width: 15%;
-}
-.img-card-img-db {
-    width: 30%;
-}
-.img-card-img-react {
-    width: 5%;
-}
-.img-card-img-church {
-    width: 95%;
+
+/* meter 최적값 색상 설정 */
+meter::-webkit-meter-optimum-value {
+    background: #6e154c;
+    background: linear-gradient(1deg,#6e154c 0%, #a23350 20%, #cd5b4f 40%, #eb8c4d 60%, #fac154 80%, #f9f871 90%);
+    background: -webkit-linear-gradient(1deg,#6e154c 0%, #a23350 20%, #cd5b4f 40%, #eb8c4d 60%, #fac154 80%, #f9f871 90%);
+    background: -moz-linear-gradient(1deg,#6e154c 0%, #a23350 20%, #cd5b4f 40%, #eb8c4d 60%, #fac154 80%, #f9f871 90%);
 }
 
 .description-image {
     width: 300px;
-    background-color: brown;
+    background-color: black;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 10px;
+    border: 1px solid rgb(91, 91, 91);
+}
+
+.img-card-img-coil-description {
+    background-image: url("../img/skill_bundle_section/coiling.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-wheel-description {
+    background-image: url("../img/skill_bundle_section/wheel_throwing.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-casting-description {
+    background-image: url("../img/skill_bundle_section/casting.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-rhino-description {
+    background-image: url("../img/skill_bundle_section/rhino.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-ps-description {
+    background-image: url("../img/skill_bundle_section/photoshop.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-il-description {
+    background-image: url("../img/skill_bundle_section/illustrator.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-js-description {
+    background-image: url("../img/skill_bundle_section/js.jpeg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-py-description {
+    background-image: url("../img/skill_bundle_section/python.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-db-description {
+    background-image: url("../img/skill_bundle_section/db.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-react-description {
+    background-image: url("../img/skill_bundle_section/react.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img-card-img-church-description {
+    background-image: url("../img/skill_bundle_section/church.jpg");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }

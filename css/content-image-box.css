@@ -36,6 +36,17 @@ body {
     font-weight:900; 
 }
 
+.logo-div:hover {
+    transform: scale(1.2); /* (150% zoom, 사이즈가 너무 클 경우 viewport 밖으로 나가게 됨 주의! */
+    /* transform-origin: left; */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(212, 0, 255),
+    0 0 82px rgb(212, 0, 255), 0 0 92px rgb(212, 0, 255), 0 0 102px rgb(212, 0, 255), 0 0 151px rgb(212, 0, 255);
+}
+
+
 .logo-inner-div {
 
 }
@@ -56,20 +67,56 @@ body {
     font-size: 12px;
     font-weight: 400;
 }
+.self-intro:hover {
+    transform: scale(1.2);    
+    /* transform-origin: left; */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(212, 0, 255),
+    0 0 82px rgb(212, 0, 255), 0 0 92px rgb(212, 0, 255), 0 0 102px rgb(212, 0, 255), 0 0 151px rgb(212, 0, 255);
+}
 
 .recent-work {
     font-size: 12px;
     font-weight: 400;
+}
+.recent-work:hover {
+    transform: scale(1.2);  
+    /* transform-origin: left; */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;    
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(212, 0, 255),
+    0 0 82px rgb(212, 0, 255), 0 0 92px rgb(212, 0, 255), 0 0 102px rgb(212, 0, 255), 0 0 151px rgb(212, 0, 255);
 }
 
 .skill-bundle {
     font-size: 12px;
     font-weight: 400;
 }
+.skill-bundle:hover {
+    transform: scale(1.2);    
+    /* transform-origin: left; */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(212, 0, 255),
+    0 0 82px rgb(212, 0, 255), 0 0 92px rgb(212, 0, 255), 0 0 102px rgb(212, 0, 255), 0 0 151px rgb(212, 0, 255);
+}
 
 .my-like {
     font-size: 12px;
     font-weight: 400;
+}
+.my-like:hover {
+    transform: scale(1.2);    
+    /* transform-origin: left; */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(212, 0, 255),
+    0 0 82px rgb(212, 0, 255), 0 0 92px rgb(212, 0, 255), 0 0 102px rgb(212, 0, 255), 0 0 151px rgb(212, 0, 255);
 }
 
 .content-introduce {
@@ -131,6 +178,15 @@ body {
 
 .description-detail-btn {
     margin-top: 40px;
+}
+.description-detail-btn:hover {
+    transform: scale(1.2); /* (150% zoom, 사이즈가 너무 클 경우 viewport 밖으로 나가게 됨 주의! */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px rgb(212, 0, 255),
+    0 0 82px rgb(212, 0, 255), 0 0 92px rgb(212, 0, 255), 0 0 102px rgb(212, 0, 255), 0 0 151px rgb(212, 0, 255);
 }
 /* 
 #viewMoreIcon {
@@ -218,7 +274,19 @@ body {
     -webkit-box-shadow: 3px 3px 11px 3px rgba(83,83,83,0.75);
     -moz-box-shadow: 3px 3px 11px 3px rgba(83,83,83,0.75);
     cursor: pointer;
-    }
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.img-background-box:hover #go_next_emoji {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+    animation: rotate_image 0.9s ease infinite;
+}
+@keyframes rotate_image {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 .inner-text {
     display: flex;

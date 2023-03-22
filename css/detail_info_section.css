@@ -14,6 +14,19 @@
     backdrop-filter: blur(10px);
     padding-top: 10px;
     padding-left: 8px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 1s ease-in-out;
+}
+.detail-info-section:hover {
+    /* transform: scaleY(1.5); */
+    /* transform: translateY(10px); */
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+}
+.detail-info-section-reveal {
+    opacity: 1;
+    z-index: 999;
 }
 
 .detail-info-title {
@@ -34,11 +47,15 @@
     position: relative;
 }
 
-#detail-info-x-emoji {
+#detail_info_x_emoji {
     font-size: 11px;
     position: absolute;
     top: -29px;
     right: -164px;
+}
+#detail_info_x_emoji:hover {
+    transform: scale(1.2); /* (150% zoom, 사이즈가 너무 클 경우 viewport 밖으로 나가게 됨 주의! */
+    transition: transform 0.3s ease-in-out;
 }
 
 .detail-class {
@@ -70,3 +87,4 @@
     background-image: url("../img/이인셀카1.jpg");
     background-size : cover;
 }
+

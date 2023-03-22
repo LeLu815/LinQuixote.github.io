@@ -53,9 +53,7 @@ document.getElementById("imgSinging").addEventListener("click", function() {
 
 
 document.getElementById("imgSinging").addEventListener("mouseover", function() {
-    console.log("mouseover");
     if (!streaming) {
-        console.log(img_singing_play);
         img_singing_play.style.display = "block";
     } else {
         img_singing_stop.style.display = "block";

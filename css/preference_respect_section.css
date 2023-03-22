@@ -34,30 +34,12 @@
     -webkit-transform: scale(1.1) translate(1px,-2px);
     -moz-transform: scale(1.1) translate(1px,-2px);
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
 }
-
-.preference-header-like:active + .like-card-bundle {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    opacity: 1;
-}
-
-.preference-header-like:active + .dislike-card-bundle {
-    display: none;
-    opacity: 0;
-}
-
-
-
-/* .like-card-bundle:active {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    opacity: 1; 
-} */
 
 .preference-header-dislike {
     width: 90px;
@@ -72,44 +54,36 @@
     -webkit-transform: scale(1.1) translate(1px,-2px);
     -moz-transform: scale(1.1) translate(1px,-2px);
     transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.9);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
 }
-
-.preference-header-dislike:active + .dislike-card-bundle {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    opacity: 1;
-}
-
-.preference-header-dislike:active + .like-card-bundle {
-    display: none;
-    opacity: 0;
-}
-
-
-
 
 .like-dislike-section {
     margin-top: 55px;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     padding: 0 50px 0 50px;
+    position: relative;
 }
+.like-dislike-section div.active {
+    opacity: 1;
+}
+
 
 .like-card-bundle {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
-}
-
-.like-card-bundle:active {
+    transition: opacity 1s ease-in-out;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
-    opacity: 1;
-
+    margin-left: 65px;
 }
 
 .like-card {
@@ -117,7 +91,6 @@
     height: 280px;
     background-color: black;
     border: 1px solid rgb(129, 129, 129);
-    
 }
 
 .like-card:hover {
@@ -207,10 +180,17 @@
 
 
 .dislike-card-bundle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
+    margin-left: 65px;
 }
 
 .dislike-card {
@@ -294,7 +274,7 @@
     width: 180px;
     height: 180px;
     margin-left: 10px;
-    margin-top: 25likeCardBundlepx;
+    margin-top: 25px;
     background-image: url("../img/like-dislike/dust.jpg");
     top: 0;
     left: 0;
