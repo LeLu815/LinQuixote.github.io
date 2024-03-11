@@ -72,6 +72,6 @@ img_card_go_pre.click();
 // https://github.com/LinQuixote
 
 
-document.querySelector(".img-card-btn").addEventListener("click", function() {
-    window.open("https://github.com/LinQuixote");
+document.querySelector(".https://github.com/LeLu815").addEventListener("click", function() {
+    window.open("https://github.com/LeLu815");
 });
