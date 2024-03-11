@@ -85,26 +85,30 @@ for (let div of skill_bundle_header_div) {
 
 function animateMeter(meter_id) {
     const meter = document.getElementById(`${meter_id}`);
-    const interval = 50; // Interval between updates in milliseconds
-    // const targetValue = meter.value <= 20 ? 30 : 110
-    let targetValue;
-    if (meter.value <= 20) {
-        targetValue = 50;
-    } else if (20< meter.value <=60) {
-        targetValue = 110;
-    } else {
-        targetValue = 5000;
-    }
-    const step = (targetValue) / (2000 / interval); // Calculate step size
 
-    let currentValue = 0;
-    let timer = setInterval(() => {
-        currentValue += step;
-        meter.value = Math.round(currentValue);
-        if (meter.value >= meter.dataset.targetValue) {
-            clearInterval(timer);
-        } 
-    }, interval);
+    if (meter.dataset.timerId === "") {
+        const interval = 10; 
+        let targetValue;
+        if (meter.value <= 20) {
+            targetValue = 50;
+        } else if (20< meter.value <=60) {
+            targetValue = 110;
+        } else {
+            targetValue = 300;
+        }
+        const step = (targetValue) / (100);
+    
+        let currentValue = 0;
+        let timer = setInterval(() => {
+            currentValue += step;
+            meter.value = Math.round(currentValue);
+            if (meter.value >= meter.dataset.targetValue) {
+                clearInterval(timer);
+                meter.dataset.timerId = ""
+            } 
+        }, interval);
+        meter.dataset.timerId = timer
+    }
 }
 
 
@@ -112,10 +116,4 @@ for (let i of graphic_bar) {
     document.getElementById(`${i}`).addEventListener("mouseover", function() {
         animateMeter(i);
     });
-    // document.getElementById(`${i}`).addEventListener("mouseout", function() {
-    //     // clearInterval(timer);
-    //     // document.getElementById(`${i}`).value = document.getElementById(`${i}`).dataset.targetValue;
-
-
-    // });
 }
