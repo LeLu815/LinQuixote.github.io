@@ -1,478 +1,682 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>LeLu | introduce</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/logo.png">
-    <link rel="stylesheet" href="./css/mainPage.css">
-    <script src="https://kit.fontawesome.com/0566d757d3.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="./css/mainPage.css" />
+    <script
+      src="https://kit.fontawesome.com/0566d757d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="whole-page">
-        <div class="content-image-box">
-            <div class="nav-bar">
-                <div class="logo-div">
-                    <div class="logo-inner-div", id="logo" data-section="#section1">
-                        <i class="fa-solid fa-bars"></i>
-                        <span class="logo">LeLu</span> 
-                    </div>
-                </div>
-                <div class="content-div", id="contentDiv">
-                    <span id="self_intro", class="self-intro" data-section="#section1">Introduce</span>
-                    <span id="recent_work", class="recent-work" data-section="#section2">RecentWork</span>
-                    <span id="skill_bundle", class="skill-bundle" data-section="#section3">Skills</span>
-                    <span id="my_like", class="my-like" data-section="#section4">Preference</span>
-                </div>
+      <div class="content-image-box">
+        <div class="nav-bar">
+          <div class="logo-div">
+            <div class="logo-inner-div" , id="logo" data-section="#section1">
+              <i class="fa-solid fa-bars"></i>
+              <span class="logo">LeLu</span>
             </div>
-            <div class="content-introduce" id="section1">
-                <div class="introduce-text">
-                    <div class="main-title">
-                        <span class="main-title-mini">Hallelujah</span>
-                        <span class="main-title-first">나를</span>
-                        <span class="main-title-second">소개합니다!</span>
-                    </div>
-                    <div class="main-description">
-                        <span class="main-description1">안녕하세요? 멋쟁이사자 국민대 11기 이인입니다.</span>
-                        <span class="main-description2">부족한만큼 더 열심히 참여해서 좋은 모습 보여드리겠습니다.</span>
-                        <span class="main-description3">감사합니다.</span>
-                    </div>
-                    <div class="description-detail-btn" id="viewMoreBtn">
-                        <span>View more</span>
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div> 
-                </div>
-                <div class="img-div">
-                    <div class="img-singing-1", id="imgSinging"></div>
-                    <i class="fa-regular fa-circle-play" id="img_singing_play"></i>
-                    <i class="fa-regular fa-circle-stop" id="img_singing_stop"></i>
-
-                </div>
-                <div class="pop-up-div-box">
-                    <div class="img-background-box">
-                        <div class="inner-text">My Pet Images</div>
-                        <div class="next-section-btn">
-                            <i class="fa-solid fa-caret-right" id="go_next_emoji"></i>
-                        </div>
-                    </div>
-                    <div class="bottom-text">
-                        <span class="bottom-text-title">Cats and Dogs</span>
-                        <span id="bottom-text-description-1">These are simple introductions and   </span>
-                        <span id="bottom-text-description-2">pictures of pretty dogs and cats.</span>
-                    </div>
-                </div>
-                <div class="cat-dog-section">
-                    <div class="img-card-section_module">
-                        <div class="img-card-section-x-btn">
-                            <i class="fa-regular fa-circle-xmark", id="img_card_section_x_btn_emoji"></i>
-                        </div>
-                        <div class="img-card-go-pre_module", id="img_card_go_pre_module">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </div>
-                        <div class="img-card-imgs_module">
-                            <div class="img-card-img-1_module"></div>
-                            <div class="img-card-img-2_module"></div>
-                            <div class="img-card-img-3_module"></div>
-                            <div class="img-card-img-4_module"></div>
-                            <div class="img-card-img-5_module"></div>
-                            <div class="img-card-img-6_module"></div>
-                            <div class="img-card-img-7_module"></div>
-                            <div class="img-card-img-8_module"></div>
-                            <div class="img-card-img-9_module"></div>
-                            <div class="img-card-img-10_module"></div>
-                        </div>
-                        <div class="img-card-go-next_module", id="img_card_go_next_module">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-                    </div>
-                    <div class="recent-work-section-show-progress_module", id="recentWorkSectionBtn">
-                        <div class="img-card-img-1-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_1_module"></i>
-                        </div>
-                        <div class="img-card-img-2-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_2_module"></i>
-                        </div>
-                        <div class="img-card-img-3-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_3_module"></i>
-                        </div>
-                        <div class="img-card-img-4-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_4_module"></i>
-                        </div>
-                        <div class="img-card-img-5-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_5_module"></i>
-                        </div>
-                        <div class="img-card-img-6-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_6_module"></i>
-                        </div>
-                        <div class="img-card-img-7-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_7_module"></i>
-                        </div>
-                        <div class="img-card-img-8-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_8_module"></i>
-                        </div>
-                        <div class="img-card-img-9-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_9_module"></i>
-                        </div>
-                        <div class="img-card-img-10-indicator_module">
-                            <i class="fa-solid fa-circle" id="recent_card_img_btn_10_module"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div class="content-div" , id="contentDiv">
+            <span id="self_intro" , class="self-intro" data-section="#section1"
+              >Introduce</span
+            >
+            <span
+              id="recent_work"
+              ,
+              class="recent-work"
+              data-section="#section2"
+              >RecentWork</span
+            >
+            <span
+              id="skill_bundle"
+              ,
+              class="skill-bundle"
+              data-section="#section3"
+              >Skills</span
+            >
+            <span id="my_like" , class="my-like" data-section="#section4"
+              >Preference</span
+            >
+          </div>
         </div>
-        <div class="content-section">
-            <div class="detail-info-section" id="detailInfoSection">
-                <div>
-                    <div class="detail-info-title">독짓는 늙은이</div>
-                    <div class="detail-info">
-                        <i class="fa-regular fa-circle-xmark", id="detail_info_x_emoji"></i>
-                        <div class="detail-class">
-                            <span>전공</span>
-                            <span>학번</span>
-                            <span>이름</span>
-                            <span>나이</span>
-                            <span>종교</span>
-                            <span>카톡</span>
-                        </div>
-                        <div class="detail-value">
-                            <span>도자공예</span>
-                            <span>15</span>
-                            <span>이인</span>
-                            <span>28</span>
-                            <span>기독교</span>
-                            <span>li815</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="detail-info-img"></div>
+        <div class="content-introduce" id="section1">
+          <div class="introduce-text">
+            <div class="main-title">
+              <span class="main-title-mini">Hallelujah</span>
+              <span class="main-title-first">나를</span>
+              <span class="main-title-second">소개합니다!</span>
             </div>
-
-            <div class="recent-work-section" id="section2">
-                <div class="img-card-description">
-                    <span class="img-card-title">Recent Work</span>
-                    <div class="img-card-sentences">
-                        <span class="img-card-single-sentence">최근 작업들을 보여드리고 싶었지만 한게 너무 없어서 그나마 있는 것으로 다 가져왔습니다...</span>
-                        <span class="img-card-single-sentence">포토샵이나 일러스트 작업에 미숙하나 시각적인 작업을 좋아합니다.  </span>
-                        <span class="img-card-single-sentence">인터렉티브하고 가능하면 3D 작업도 웹사이트에 구현해보고 싶습니다.</span>
-                        <span class="img-card-single-sentence">함께 작업하실 분 언제든지 환영합니다.</span>
-                    </div>
-                    <div class="img-card-btn">
-                        <span class="img-card-btn-text">contact</span> 
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-                </div>
-                <div class="img-card-section">
-                    <div class="img-card-go-pre", id="img_card_go_pre">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </div>
-                    <div class="img-card-imgs">
-                        <div class="img-card-img-1"></div>
-                        <div class="img-card-img-2"></div>
-                        <div class="img-card-img-3"></div>
-                        <div class="img-card-img-4"></div>
-                        <div class="img-card-img-5"></div>
-                        <div class="img-card-img-6"></div>
-                        <div class="img-card-img-7"></div>
-                        <div class="img-card-img-8"></div>
-                        <div class="img-card-img-9"></div>
-                        <div class="img-card-img-10"></div>
-                        <div class="img-card-img-11"></div>
-                    </div>
-                    <div class="img-card-go-next", id="img_card_go_next">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>
-                <div class="recent-work-section-show-progress", id="recentWorkSectionBtn">
-                    <div class="img-card-img-1-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_1"></i>
-                    </div>
-                    <div class="img-card-img-2-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_2"></i>
-                    </div>
-                    <div class="img-card-img-3-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_3"></i>
-                    </div>
-                    <div class="img-card-img-4-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_4"></i>
-                    </div>
-                    <div class="img-card-img-5-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_5"></i>
-                    </div>
-                    <div class="img-card-img-6-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_6"></i>
-                    </div>
-                    <div class="img-card-img-7-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_7"></i>
-                    </div>
-                    <div class="img-card-img-8-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_8"></i>
-                    </div>
-                    <div class="img-card-img-9-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_9"></i>
-                    </div>
-                    <div class="img-card-img-10-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_10"></i>
-                    </div>
-                    <div class="img-card-img-11-indicator">
-                        <i class="fa-solid fa-circle" id="recent_card_img_btn_11"></i>
-                    </div>
-                </div>
+            <div class="main-description">
+              <span class="main-description1"
+                >안녕하세요? 멋쟁이사자 국민대 11기 이인입니다.</span
+              >
+              <span class="main-description2"
+                >열심히 참여해서 좋은 모습 보여드리겠습니다.</span
+              >
+              <span class="main-description3">감사합니다.</span>
             </div>
-
-            <div class="skill-bundle-section" id="section3">
-                <div class="skill-bundle-text">
-                    <span class="skill-bundle-title">Skills</span>
-                    <div class="skill-bundle-description">
-                        <span>잘할 수 있는 것만 모으면 몇 개 되지 않아서 정말 제가 할 수 있는 모든 것을 끌어 왔습니다.</span>
-                        <span>참고로 아래의 모든 수치는 상대값입니다.</span>
-                        <span>가장 잘하는 것을 기준으로 수치화했습니다.</span>
-                        <span>감사합니다.</span>
-                    </div>
-                    
-                </div>
-                <div class="skill-bundle-card">
-                    <div class="represent-imges">
-                        <div class="skill-bundle-header-text" id="coiling_div">
-                            <i class="fa-solid fa-coins" id="coiling_i"></i>
-                            <span class="coiling">코일링</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="wheel_div">
-                            <i class="fa-solid fa-circle-notch" id="wheel_i"></i>
-                            <span class="wheel">물레</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="casting_div">
-                            <i class="fa-solid fa-industry" id="casting_i"></i>
-                            <span class="casting">캐스팅</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="rhino_div">
-                            <i class="fa-solid fa-cube" id="rhino_i"></i>
-                            <span class="rhino">라이노</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="photoshop_div">
-                            <i class="fa-solid fa-image" id="photoshop_i"></i>
-                            <span class="photoshop">포토샵</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="illustator_div">
-                            <i class="fa-regular fa-image" id="illustator_i"></i>
-                            <span class="illustator">일러스트</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="javascript_div">
-                            <i class="fa-brands fa-square-js" id="javascript_i"></i>
-                            <span class="javascript">자바스크립트</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="python_div">
-                            <i class="fa-brands fa-python" id="python_i"></i>
-                            <span class="python">파이썬</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="mongo_div">
-                            <i class="fa-solid fa-database" id="mongo_i"></i>
-                            <span class="mongo">몽고DB</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="react_div">
-                            <i class="fa-brands fa-react" id="react_i"></i>
-                            <span class="react">리액트</span>
-                        </div>
-
-                        <div class="skill-bundle-header-text" id="church_div">
-                            <i class="fa-solid fa-church" id="church_i"></i>
-                            <span class="church">교회가기</span>
-                        </div>
-                    </div>
-                    <div class="graphic-bar">
-                        <meter id="coiling" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="70" data-target-value="70"  data-timer-id=""></meter>
-                        <meter id="wheel" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="40" data-target-value="40" data-timer-id=""></meter>
-                        <meter id="casting" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="50" data-target-value="50" data-timer-id=""></meter>
-                        <meter id="rhino" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="45" data-target-value="45" data-timer-id=""></meter>
-                        <meter id="photoshop" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="25" data-target-value="25" data-timer-id=""></meter>
-                        <meter id="illustator" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="20" data-target-value="20" data-timer-id=""></meter>
-                        <meter id="javascript" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="55" data-target-value="55" data-timer-id=""></meter>
-                        <meter id="python" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="15" data-target-value="15" data-timer-id=""></meter>
-                        <meter id="mongo" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="30" data-target-value="30" data-timer-id=""></meter>
-                        <meter id="react" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="5" data-target-value="5" data-timer-id=""></meter>
-                        <meter id="church" class="meter-bar" min="0" max="100" low="40" high="70" optimum="100" value="99" data-target-value="100" data-timer-id=""></meter>
-                    </div>
-                    <div class="description-image">
-                        <span>설명 이미지</span>
-                        <i class="fa-solid fa-panorama"></i>
-                        <div class="img-card-img-coil-description"></div>
-                        <div class="img-card-img-wheel-description"></div>
-                        <div class="img-card-img-casting-description"></div>
-                        <div class="img-card-img-rhino-description"></div>
-                        <div class="img-card-img-ps-description"></div>
-                        <div class="img-card-img-il-description"></div>
-                        <div class="img-card-img-js-description"></div>
-                        <div class="img-card-img-py-description"></div>
-                        <div class="img-card-img-db-description"></div>
-                        <div class="img-card-img-react-description"></div>
-                        <div class="img-card-img-church-description"></div>
-                    </div>
-                </div>
+            <div class="description-detail-btn" id="viewMoreBtn">
+              <span>View more</span>
+              <i class="fa-solid fa-chevron-right"></i>
             </div>
-    
-            <div class="preference-respect-section" id="section4"> 
-                <div class="preference-header">
-                    <div class="preference-header-text">
-                        <span>Preference</span>
-                    </div>
-                    <div class="preference-header-btns">
-                        <button class="preference-header-like" onclick="showLikeDisplay()">
-                            <i class="fa-solid fa-heart"></i>
-                            <span>Like</span>
-                        </button>
-                        <button class="preference-header-dislike" onclick="showDislikeDisplay()">
-                            <i class="fa-solid fa-heart-crack"></i>
-                            <span>Dislike</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="like-dislike-section">  
-                    <div id="likeCardBundle" class="like-card-bundle">
-                        <div class="like-card" id="likeCard">
-                            <div class="like-card-header">
-                                <div class="like-card-class">
-                                    <span>이름</span>
-                                    <span>나이</span>
-                                    <span>성별</span>
-                                </div>
-                                <div class="like-card-value">
-                                    <span>예니</span>
-                                    <span>9살</span>
-                                    <span>남</span>
-                                </div>
-                            </div>
-                            <div class="like-card-img-cat"></div>
-                        </div>
-
-                        <div class="like-card" id="likeCard">
-                            <div class="like-card-header">
-                                <div class="like-card-class">
-                                    <span>이름</span>
-                                    <span>나이</span>
-                                    <span>성별</span>
-                                </div>
-                                <div class="like-card-value">
-                                    <span>해피</span>
-                                    <span>4살</span>
-                                    <span>남</span>
-                                </div>
-                            </div>
-                            <div class="like-card-img-dog"></div>
-                        </div>
-
-                        <div class="like-card" id="likeCard">
-                            <div class="like-card-header">
-                                <div class="like-card-class">
-                                    <span>이름</span>
-                                    <span>구분</span>
-                                    <span>맛집</span>
-                                </div>
-                                <div class="like-card-value">
-                                    <span>알리오올리오</span>
-                                    <span>양식</span>
-                                    <span>누보5</span>
-                                </div>
-                            </div>
-                            <div class="like-card-img-food"></div>
-                        </div>
-
-                        <div class="like-card" id="likeCard">
-                            <div class="like-card-header">
-                                <div class="like-card-class">
-                                    <span>이름</span>
-                                    <span>소속</span>
-                                    <span>위치</span>
-                                </div>
-                                <div class="like-card-value">
-                                    <span>청년부</span>
-                                    <span>빛교회</span>
-                                    <span>방배동 동광로 60</span>
-                                </div>
-                            </div>
-                            <div class="like-card-img-church"></div>
-                        </div>
-
-                    </div>
-
-                    <div id="dislikeCardBundle" class="dislike-card-bundle">
-                       
-                        <div class="dislike-card", id="dislikedCard">
-                            <div class="dislike-card-header">
-                                <div class="dislike-card-class">
-                                    <span>이름</span>
-                                    <span>종류</span>
-                                </div>
-                                <div class="dislike-card-value">
-                                    <span>걷고 뛰기는 모든 행위</span>
-                                    <span>운동</span>
-                                </div>
-                            </div>
-                            <div class="dislike-card-img-walk"></div>
-                        </div>
-
-                        <div class="dislike-card", id="dislikedCard">
-                            <div class="dislike-card-header">
-                                <div class="dislike-card-class">
-                                    <span>이름</span>
-                                    <span>종류</span>
-                                </div>
-                                <div class="dislike-card-value">
-                                    <span>도자작업</span>
-                                    <span>물레, 캐스팅</span>
-                                </div>
-                            </div>
-                            <div class="dislike-card-img-ceramics"></div>
-                        </div>
-
-                        <div class="dislike-card", id="dislikedCard">
-                            <div class="dislike-card-header">
-                                <div class="dislike-card-class">
-                                    <span>이름</span>
-                                    <span>종류</span>
-                                </div>
-                                <div class="dislike-card-value">
-                                    <span>추위,더위</span>
-                                    <span>날씨, 온도</span>
-                                </div>
-                            </div>
-                            <div class="dislike-card-img-hot"></div>
-                        </div>
-
-                        <div class="dislike-card", id="dislikedCard">
-                            <div class="dislike-card-header">
-                                <div class="dislike-card-class">
-                                    <span>이름</span>
-                                    <span>종류</span>
-                                </div>
-                                <div class="dislike-card-value">
-                                    <span>먼지, 털</span>
-                                    <span>알레르기</span>
-                                </div>
-                            </div>
-                            <div class="dislike-card-img-dust"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="like-dislike-section-button", id="likeDislikeSectionBtn">
-    
-                </div>
+          </div>
+          <div class="img-div">
+            <div class="img-singing-1" , id="imgSinging"></div>
+            <i class="fa-regular fa-circle-play" id="img_singing_play"></i>
+            <i class="fa-regular fa-circle-stop" id="img_singing_stop"></i>
+          </div>
+          <div class="pop-up-div-box">
+            <div class="img-background-box">
+              <div class="inner-text">My Pet Images</div>
+              <div class="next-section-btn">
+                <i class="fa-solid fa-caret-right" id="go_next_emoji"></i>
+              </div>
             </div>
-    
+            <div class="bottom-text">
+              <span class="bottom-text-title">Cats and Dogs</span>
+              <span id="bottom-text-description-1"
+                >These are simple introductions and
+              </span>
+              <span id="bottom-text-description-2"
+                >pictures of pretty dogs and cats.</span
+              >
+            </div>
+          </div>
+          <div class="cat-dog-section">
+            <div class="img-card-section_module">
+              <div class="img-card-section-x-btn">
+                <i
+                  class="fa-regular fa-circle-xmark"
+                  ,
+                  id="img_card_section_x_btn_emoji"
+                ></i>
+              </div>
+              <div class="img-card-go-pre_module" , id="img_card_go_pre_module">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="img-card-imgs_module">
+                <div class="img-card-img-1_module"></div>
+                <div class="img-card-img-2_module"></div>
+                <div class="img-card-img-3_module"></div>
+                <div class="img-card-img-4_module"></div>
+                <div class="img-card-img-5_module"></div>
+                <div class="img-card-img-6_module"></div>
+                <div class="img-card-img-7_module"></div>
+                <div class="img-card-img-8_module"></div>
+                <div class="img-card-img-9_module"></div>
+                <div class="img-card-img-10_module"></div>
+              </div>
+              <div
+                class="img-card-go-next_module"
+                ,
+                id="img_card_go_next_module"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+            <div
+              class="recent-work-section-show-progress_module"
+              ,
+              id="recentWorkSectionBtn"
+            >
+              <div class="img-card-img-1-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_1_module"
+                ></i>
+              </div>
+              <div class="img-card-img-2-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_2_module"
+                ></i>
+              </div>
+              <div class="img-card-img-3-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_3_module"
+                ></i>
+              </div>
+              <div class="img-card-img-4-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_4_module"
+                ></i>
+              </div>
+              <div class="img-card-img-5-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_5_module"
+                ></i>
+              </div>
+              <div class="img-card-img-6-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_6_module"
+                ></i>
+              </div>
+              <div class="img-card-img-7-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_7_module"
+                ></i>
+              </div>
+              <div class="img-card-img-8-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_8_module"
+                ></i>
+              </div>
+              <div class="img-card-img-9-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_9_module"
+                ></i>
+              </div>
+              <div class="img-card-img-10-indicator_module">
+                <i
+                  class="fa-solid fa-circle"
+                  id="recent_card_img_btn_10_module"
+                ></i>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-    
+      </div>
+      <div class="content-section">
+        <div class="detail-info-section" id="detailInfoSection">
+          <div>
+            <div class="detail-info-title">독짓는 늙은이</div>
+            <div class="detail-info">
+              <i
+                class="fa-regular fa-circle-xmark"
+                ,
+                id="detail_info_x_emoji"
+              ></i>
+              <div class="detail-class">
+                <span>전공</span>
+                <span>학번</span>
+                <span>이름</span>
+                <span>나이</span>
+                <span>종교</span>
+                <span>카톡</span>
+              </div>
+              <div class="detail-value">
+                <span>도자공예</span>
+                <span>15</span>
+                <span>이인</span>
+                <span>28</span>
+                <span>기독교</span>
+                <span>li815</span>
+              </div>
+            </div>
+          </div>
+          <div class="detail-info-img"></div>
+        </div>
 
-    <div class="footer">
+        <div class="recent-work-section" id="section2">
+          <div class="img-card-description">
+            <span class="img-card-title">Recent Work</span>
+            <div class="img-card-sentences">
+              <span class="img-card-single-sentence"
+                >포토샵과 일러스트레이터를 활용한 시각적 작업을 좋아합니다.
+              </span>
+              <span class="img-card-single-sentence"
+                >인터렉티브하고 가능하면 3D 작업도 웹사이트에 구현해보고
+                싶습니다.</span
+              >
+              <span class="img-card-single-sentence"
+                >함께 작업하실 분 언제든지 환영합니다.</span
+              >
+            </div>
+            <div class="img-card-btn">
+              <span class="img-card-btn-text">contact</span>
+              <i class="fa-brands fa-github"></i>
+            </div>
+          </div>
+          <div class="img-card-section">
+            <div class="img-card-go-pre" , id="img_card_go_pre">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="img-card-imgs">
+              <div class="img-card-img-1"></div>
+              <div class="img-card-img-2"></div>
+              <div class="img-card-img-3"></div>
+              <div class="img-card-img-4"></div>
+              <div class="img-card-img-5"></div>
+              <div class="img-card-img-6"></div>
+              <div class="img-card-img-7"></div>
+              <div class="img-card-img-8"></div>
+              <div class="img-card-img-9"></div>
+              <div class="img-card-img-10"></div>
+              <div class="img-card-img-11"></div>
+            </div>
+            <div class="img-card-go-next" , id="img_card_go_next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+          <div
+            class="recent-work-section-show-progress"
+            ,
+            id="recentWorkSectionBtn"
+          >
+            <div class="img-card-img-1-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_1"></i>
+            </div>
+            <div class="img-card-img-2-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_2"></i>
+            </div>
+            <div class="img-card-img-3-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_3"></i>
+            </div>
+            <div class="img-card-img-4-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_4"></i>
+            </div>
+            <div class="img-card-img-5-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_5"></i>
+            </div>
+            <div class="img-card-img-6-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_6"></i>
+            </div>
+            <div class="img-card-img-7-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_7"></i>
+            </div>
+            <div class="img-card-img-8-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_8"></i>
+            </div>
+            <div class="img-card-img-9-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_9"></i>
+            </div>
+            <div class="img-card-img-10-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_10"></i>
+            </div>
+            <div class="img-card-img-11-indicator">
+              <i class="fa-solid fa-circle" id="recent_card_img_btn_11"></i>
+            </div>
+          </div>
+        </div>
 
+        <div class="skill-bundle-section" id="section3">
+          <div class="skill-bundle-text">
+            <span class="skill-bundle-title">Skills</span>
+            <div class="skill-bundle-description">
+              <span>좋아하는 것들과 잘하는 것들 모아왔습니다.</span>
+              <span>참고로 아래의 모든 수치는 상대값입니다.</span>
+              <span>가장 잘하는 것을 기준으로 수치화했습니다.</span>
+              <span>감사합니다.</span>
+            </div>
+          </div>
+          <div class="skill-bundle-card">
+            <div class="represent-imges">
+              <div class="skill-bundle-header-text" id="coiling_div">
+                <i class="fa-solid fa-coins" id="coiling_i"></i>
+                <span class="coiling">코일링</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="wheel_div">
+                <i class="fa-solid fa-circle-notch" id="wheel_i"></i>
+                <span class="wheel">물레</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="casting_div">
+                <i class="fa-solid fa-industry" id="casting_i"></i>
+                <span class="casting">캐스팅</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="rhino_div">
+                <i class="fa-solid fa-cube" id="rhino_i"></i>
+                <span class="rhino">라이노</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="photoshop_div">
+                <i class="fa-solid fa-image" id="photoshop_i"></i>
+                <span class="photoshop">포토샵</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="illustator_div">
+                <i class="fa-regular fa-image" id="illustator_i"></i>
+                <span class="illustator">일러스트</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="javascript_div">
+                <i class="fa-brands fa-square-js" id="javascript_i"></i>
+                <span class="javascript">자바스크립트</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="python_div">
+                <i class="fa-brands fa-python" id="python_i"></i>
+                <span class="python">파이썬</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="mongo_div">
+                <i class="fa-solid fa-database" id="mongo_i"></i>
+                <span class="mongo">몽고DB</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="react_div">
+                <i class="fa-brands fa-react" id="react_i"></i>
+                <span class="react">리액트</span>
+              </div>
+
+              <div class="skill-bundle-header-text" id="church_div">
+                <i class="fa-solid fa-church" id="church_i"></i>
+                <span class="church">교회가기</span>
+              </div>
+            </div>
+            <div class="graphic-bar">
+              <meter
+                id="coiling"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="70"
+                data-target-value="70"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="wheel"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="40"
+                data-target-value="40"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="casting"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="50"
+                data-target-value="50"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="rhino"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="45"
+                data-target-value="45"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="photoshop"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="25"
+                data-target-value="25"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="illustator"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="20"
+                data-target-value="20"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="javascript"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="55"
+                data-target-value="55"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="python"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="15"
+                data-target-value="15"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="mongo"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="30"
+                data-target-value="30"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="react"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="5"
+                data-target-value="5"
+                data-timer-id=""
+              ></meter>
+              <meter
+                id="church"
+                class="meter-bar"
+                min="0"
+                max="100"
+                low="40"
+                high="70"
+                optimum="100"
+                value="99"
+                data-target-value="100"
+                data-timer-id=""
+              ></meter>
+            </div>
+            <div class="description-image">
+              <span>설명 이미지</span>
+              <i class="fa-solid fa-panorama"></i>
+              <div class="img-card-img-coil-description"></div>
+              <div class="img-card-img-wheel-description"></div>
+              <div class="img-card-img-casting-description"></div>
+              <div class="img-card-img-rhino-description"></div>
+              <div class="img-card-img-ps-description"></div>
+              <div class="img-card-img-il-description"></div>
+              <div class="img-card-img-js-description"></div>
+              <div class="img-card-img-py-description"></div>
+              <div class="img-card-img-db-description"></div>
+              <div class="img-card-img-react-description"></div>
+              <div class="img-card-img-church-description"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="preference-respect-section" id="section4">
+          <div class="preference-header">
+            <div class="preference-header-text">
+              <span>Preference</span>
+            </div>
+            <div class="preference-header-btns">
+              <button
+                class="preference-header-like"
+                onclick="showLikeDisplay()"
+              >
+                <i class="fa-solid fa-heart"></i>
+                <span>Like</span>
+              </button>
+              <button
+                class="preference-header-dislike"
+                onclick="showDislikeDisplay()"
+              >
+                <i class="fa-solid fa-heart-crack"></i>
+                <span>Dislike</span>
+              </button>
+            </div>
+          </div>
+          <div class="like-dislike-section">
+            <div id="likeCardBundle" class="like-card-bundle">
+              <div class="like-card" id="likeCard">
+                <div class="like-card-header">
+                  <div class="like-card-class">
+                    <span>이름</span>
+                    <span>나이</span>
+                    <span>성별</span>
+                  </div>
+                  <div class="like-card-value">
+                    <span>예니</span>
+                    <span>9살</span>
+                    <span>남</span>
+                  </div>
+                </div>
+                <div class="like-card-img-cat"></div>
+              </div>
+
+              <div class="like-card" id="likeCard">
+                <div class="like-card-header">
+                  <div class="like-card-class">
+                    <span>이름</span>
+                    <span>나이</span>
+                    <span>성별</span>
+                  </div>
+                  <div class="like-card-value">
+                    <span>해피</span>
+                    <span>4살</span>
+                    <span>남</span>
+                  </div>
+                </div>
+                <div class="like-card-img-dog"></div>
+              </div>
+
+              <div class="like-card" id="likeCard">
+                <div class="like-card-header">
+                  <div class="like-card-class">
+                    <span>이름</span>
+                    <span>구분</span>
+                    <span>맛집</span>
+                  </div>
+                  <div class="like-card-value">
+                    <span>알리오올리오</span>
+                    <span>양식</span>
+                    <span>누보5</span>
+                  </div>
+                </div>
+                <div class="like-card-img-food"></div>
+              </div>
+
+              <div class="like-card" id="likeCard">
+                <div class="like-card-header">
+                  <div class="like-card-class">
+                    <span>이름</span>
+                    <span>소속</span>
+                    <span>위치</span>
+                  </div>
+                  <div class="like-card-value">
+                    <span>청년부</span>
+                    <span>빛교회</span>
+                    <span>방배동 동광로 60</span>
+                  </div>
+                </div>
+                <div class="like-card-img-church"></div>
+              </div>
+            </div>
+
+            <div id="dislikeCardBundle" class="dislike-card-bundle">
+              <div class="dislike-card" , id="dislikedCard">
+                <div class="dislike-card-header">
+                  <div class="dislike-card-class">
+                    <span>이름</span>
+                    <span>종류</span>
+                  </div>
+                  <div class="dislike-card-value">
+                    <span>걷고 뛰기는 모든 행위</span>
+                    <span>운동</span>
+                  </div>
+                </div>
+                <div class="dislike-card-img-walk"></div>
+              </div>
+
+              <div class="dislike-card" , id="dislikedCard">
+                <div class="dislike-card-header">
+                  <div class="dislike-card-class">
+                    <span>이름</span>
+                    <span>종류</span>
+                  </div>
+                  <div class="dislike-card-value">
+                    <span>도자작업</span>
+                    <span>물레, 캐스팅</span>
+                  </div>
+                </div>
+                <div class="dislike-card-img-ceramics"></div>
+              </div>
+
+              <div class="dislike-card" , id="dislikedCard">
+                <div class="dislike-card-header">
+                  <div class="dislike-card-class">
+                    <span>이름</span>
+                    <span>종류</span>
+                  </div>
+                  <div class="dislike-card-value">
+                    <span>추위,더위</span>
+                    <span>날씨, 온도</span>
+                  </div>
+                </div>
+                <div class="dislike-card-img-hot"></div>
+              </div>
+
+              <div class="dislike-card" , id="dislikedCard">
+                <div class="dislike-card-header">
+                  <div class="dislike-card-class">
+                    <span>이름</span>
+                    <span>종류</span>
+                  </div>
+                  <div class="dislike-card-value">
+                    <span>먼지, 털</span>
+                    <span>알레르기</span>
+                  </div>
+                </div>
+                <div class="dislike-card-img-dust"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="like-dislike-section-button"
+            ,
+            id="likeDislikeSectionBtn"
+          ></div>
+        </div>
+      </div>
     </div>
+
+    <div class="footer"></div>
 
     <script src="./js/imgHover.js"></script>
     <script src="./js/preference.js"></script>
@@ -481,5 +685,5 @@
     <script src="./js/detail_info.js"></script>
     <script src="./js/move_section.js"></script>
     <script src="./js/cat_dog.js"></script>
-</body>
+  </body>
 </html>
